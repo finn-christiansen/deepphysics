@@ -1,6 +1,6 @@
 ﻿# Deep Physics Project
 
-![here should be the title image](https://drive.google.com/uc?export=view&id=18Rav-9Tn1vF79QdQnNVqPMIie87F9ZSN)
+![here should be the title image](https://drive.google.com/uc?export=view&id=1UlCWz2QrtY05GGtMkjqV9LPV2v5MBpZX)
 
 <span style="font-size:10px; color:Gray">	&copy; Prof. Dr. Matthias Bode [https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.7b02419](https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.7b02419); this image is not part of the code and therefore NOT licenced under the MIT license!</span>
 
@@ -9,7 +9,7 @@ The project deep physics intends to automatically recognize states of a single m
  
 ## Scientific Background
 
-![here should be the STM scheme image](https://drive.google.com/uc?export=view&id=1maOIoenKDaRCJpgdaQ2Pv5Y1sCYaluiM)
+![here should be the STM scheme image](https://drive.google.com/uc?export=view&id=18u2C8EpnM5el_wEOgr2FrcAgo6_7dRAj)
 
 <span style="font-size:10px; color:Gray">	&copy; Finn Christiansen; this image is not part of the code and therefore NOT licenced under the MIT license!</span>
 
@@ -26,7 +26,7 @@ In order to analyze the tautomerization of these single molecules a set of rough
 The problem we are solving is a standard classification problem. Our data set consist of approximately 46 000 manually labeled images of a single molecule in the above mentioned six different states. The metastability of states 3 and 4 brings along an imbalanced number of images for the different states. The majority of the images shows a molecule in states 1 or 2, a minority is in state 3 or 4 and only a few images of states 5 and 6 can be found. 
 We solved this task by using a convolutional neural network (CNN) and the new Keras API of Tensorflow 2.0 Beta. In first test runs we got inaccurate results due to the heavily unbalanced data set. Our first approach solving this problem was an augmentation of the data set by generating images for minority states out of majority states. This was error-prone and the accuracy was not satisfying. Additionally, it would have been necessary to adjust the augmentation algorithm for every new experiment geometry. This would have made it impossible to hand the project over to the scientists. Our second and final approach was to use a weighted loss function without an augmentation. This led to satisfying results.  
  
-The dataset can be downloaded <span style="font-size:10px; color:Gray"> <a href="https://drive.google.com/uc?export=view&id=10Xs5CfXk2qZVYJDy5TMahj1KvcZz1nfE">here</a> <b>&copy; Prof. Dr. Matthias Bode; the data set is not part of the code and therefore NOT licenced under the MIT license! </b></span>
+The dataset can be downloaded <span style="font-size:10px; color:Gray"> <a href="https://drive.google.com/uc?export=view&id=1Hx74DNQvGh5t04I5D4iQ6MKqCPbYhujN">here</a> <b>&copy; Prof. Dr. Matthias Bode; the data set is not part of the code and therefore NOT licenced under the MIT license! </b></span>
 
 
 
